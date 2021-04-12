@@ -25,7 +25,6 @@ function[arfii,arfo]=Filtered(rSignal,fsn,t)
     fprintf('\n Fundamental frequency is:\n');
     disp(arfii(k+1));
   
-    
     subplot(2,1,2)
     plot(arfii,arfo,'r','Marker','*','MarkerEdgeColor','b','MarkerIndices',(k+1));
     title('Fourier');

@@ -11,7 +11,7 @@ function [fsn,t,rSignal]=Integrate(scr)
     xlabel('Time');
     
     factors=FACTS(length(scr));
-    if length(factors)<=3
+    if length(factors)<4
         scr(1,:)=[];
         scr(length(scr),:)=[];
         factors=FACTS(length(scr));
