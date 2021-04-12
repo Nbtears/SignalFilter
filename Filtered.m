@@ -18,7 +18,7 @@ function[arfii,arfo]=Filtered(rSignal,fsn,t)
     arfii=fii(1:length(k));
     second=arfo;
         
-    %Obteined fundamental frequency
+    %Obtaine fundamental frequency
     second(1)=[];
     k=find(second==max(second));
     fprintf('Cutoff frequency used:\n\t 50 Hz')
